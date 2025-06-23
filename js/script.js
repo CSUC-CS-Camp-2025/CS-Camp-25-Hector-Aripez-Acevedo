@@ -14,7 +14,6 @@ $( document ).ready(function() {
 
 $(document).ready(function () {
     let idx = 0;
-
     const imgs = document.querySelectorAll('.slideshowItem');
     const numSlides = imgs.length;
 
