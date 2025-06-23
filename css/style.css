@@ -1,7 +1,7 @@
 #kitty {
     width:100px;
-    height:100px;
-    position:relative;
+    position:center;
+    border-radius: 20px;
    
 }
 
@@ -18,9 +18,12 @@ body {
     background-color: rgb(255, 255, 255, 0, 3);
   }
 
-h1{
+
+h1, h2, em ,p, strong, li
+{
+
     color:aqua;
-    align-items:end;
+    align-items:start;
 }
 
 a:hover {
@@ -36,4 +39,49 @@ a:hover {
 .fa-linkedin {
   background: var(#fff);
   color: rgb(58, 4, 252);
+}
+.imgSlideshow {
+    position: relative;
+    height: 400px;
+    width: auto;
+    max-width: 600px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slideshowItem{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshowItem.active {
+    opacity: 1;
+}
+
+.imgSlideshow {
+    position: relative;
+    height: 400px;
+    width: auto;
+    max-width: 600px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slideshowItem{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.slideshowItem.active {
+    opacity: 1;
 }
