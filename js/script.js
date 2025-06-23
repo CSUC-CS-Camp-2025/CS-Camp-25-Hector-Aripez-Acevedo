@@ -1,8 +1,16 @@
+// Waits until Waits until the HTML document is fully loaded 
+// before running the code inside.
+// //Adds a click event listener to that button.
 $( document ).ready(function() {
+
     $('#btn').click(function() {
         window.alert("DID YOU JUST CLICK ME?!");
     });
 });
+
+// Keeps track of the current slide.
+// How many slides there are.
+//loping back to zero after the last one.
 
 $(document).ready(function () {
     let idx = 0;
@@ -21,20 +29,6 @@ $(document).ready(function () {
 
     const links = document.querySelectorAll('.tab');
     const tabContent = document.querySelectorAll('.tabContent');
-
-    links.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault(); 
-            const tgtID = link.getAttribute('href').substring(1);
-            tabContent.forEach(tab => {
-                tab.style.opacity = 0;
-            });
-            links.forEach(link => {
-                link.classList.remove('active');
-            });
-            link.classList.add('active');
-            document.getElementById(tgtID).style.opacity = 1;
-        });
+            
+     });
     
-    }); 
-});

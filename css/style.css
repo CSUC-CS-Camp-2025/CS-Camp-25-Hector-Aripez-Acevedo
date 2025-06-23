@@ -22,7 +22,7 @@ body {
 h1, h2, em ,p, strong, li
 {
 
-    color:aqua;
+    color:rgb(229, 255, 0);
     align-items:center;
 }
 
@@ -31,7 +31,7 @@ a:hover {
 }
 
 .fa-youtube  {
-    align-items:flex-start;
+    align-items:start;
   background: var(#fff);
   color: rgb(252, 4, 4);
 }
