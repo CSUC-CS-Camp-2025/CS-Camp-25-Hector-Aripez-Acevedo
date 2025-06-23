@@ -11,8 +11,8 @@ body {
     background-attachment:fixed;
     min-height: 100vh;
     display: flex;
-    justify-content:flex-start;
-    align-items:flex-start;
+    justify-content:center;
+    align-items:center;
     backdrop-filter: blur(5px);
     background-color: rgb(255, 255, 255, 0, 3);
     
@@ -23,7 +23,7 @@ h1, h2, em ,p, strong, li
 {
 
     color:aqua;
-    align-items:start;
+    align-items:center;
 }
 
 a:hover {
